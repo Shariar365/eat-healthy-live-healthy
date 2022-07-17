@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+/*
+      Assignment : Term project
+      Name: Asm Shariar Chowdhury
+      Date: 7/11/2022
+*/
+
+
+h1 {
+    color: sandybrown;
+    margin-bottom: .25em;
+    text-align: center;
+}
+table {
+   table-layout: fixed ;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+    height: 40%;
+    background-color: beige;
+}
+td {
+    width: 2em;
+    height: 2em;
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+ }
+ th {
+   border: 1px solid black;
+   background-color: whitesmoke;
+ }   
+ 
+

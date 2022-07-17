@@ -1,0 +1,121 @@
+<html>
+</head>
+<body>
+
+</body>
+</html>
+<head>
+   <!--
+      Assignment : Term project
+      Name: Asm Shariar Chowdhury
+      Date: 7/11/2022 
+   -->   
+   <title>Eat healthy live healthy </title>
+   <meta char="utf-8">
+   <meta name="keywords" content="healthy, vegan, salad" >
+   <link rel="stylesheet" type="text/css" href="tp_layout2.css">
+   <script src= "tp.js" defer></script>
+   <script src="payment.js"></script>
+</head>
+<body>
+<form id="form"action="tp_events_txt.html" method="post" required>Username:<input type="username" id="name" required> 
+                                  Password:<input type="password" id="psw" required> 
+    <button type="button" id="entername">Log in</button> </form>
+  <p id="display"></p>
+
+
+<header>
+   <a href="home.html">
+   <img src="poster.jpg" alt="superhero" height="100" />  </a>
+   <nav>
+      <ul>
+      <li> <a href="home.html"> Home</a> </li>
+      <li><a href="recipe.html"> Recipes </a></li>
+      <li id="store"><a href="store.html">Store</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+       </ul>
+   </nav>
+</header>  
+<article class="store_st">
+
+         
+         <form id="form" action="payment.html" method="POST">
+
+          <div id="first">
+          <div class="ite" >
+         <img src="hummus2.jpg" width="200px" height="100px">   
+         <h2>Hummas bowl($10)</h2>
+        
+         
+           <label id="quan" for="quantityBox">Quantity:</label> 
+           <input name="Hummas" id="Hummas" type="number" value="0" step= "1" min="0" max="10"/>
+           <button id="hummas" type="button">Add item to your Order</button>
+           <button disabled="true" id="hummas2" type="button">Delete item</button>
+         </div>
+
+         <div class="ite">
+         <img src="chickpea2.jpg" width="200px" height="100px"> 
+         <h2>Chickpea salad($8)</h2>
+         
+           <label id="quan" for="quantityBox">Quantity:</label>
+           <input name="Chickpea" id="Chickpea" type="number" value="0" step= "1" min="0" max="10"/>
+           <button id="chickpea" type="button">Add item to your Order</button>
+           <button disabled="true" id="chickpea2" type="button">Delete item</button>
+         </div>
+   
+         <div class="ite">
+         <img src="tuna2.jpg" width="200px" height="100px"> 
+         <h2>Tuna salad($6)</h2>
+           <label id="quan" for="quantityBox">Quantity:</label>
+           <input name="Tuna" id="Tuna" type="number" value="0" step= "1" min="0" max="10"/>
+           <button id="tuna" type="button">Add item to your Order</button>
+           <button disabled="true" id="tuna2" type="button">Delete item</button>
+         </div>
+
+         <div class="ite"> 
+         <img src="salmon2.jpg" width="200px" height="100px"> 
+         <h2>Salmon salad($8)</h2>
+           <label id="quan" for="quantityBox">Quantity:</label>
+           <input name="Salmon" id="Salmon" type="number" value="0" step= "1" min="0" max="10"/>
+           <button id="salmon" type="button">Add item to your Order</button>
+           <button disabled="true" id="salmon2" type="button">Delete item</button>
+         </div>
+
+         <br>
+         <br></div>
+
+         <div class="yu" id="second">
+         <h2 >Your order</h2>
+         <p id="dis"> </p>
+         <p id="dis2"> </p>
+         <p id="dis3"> </p>
+         <p id="dis4"> </p>
+         <hr>
+         <p id="dis5"> </p>
+         <p id="dis6"> </p>
+         <hr>
+         <p id="dis7"> </p>
+         <button  hidden="true" id="add" type="button">Add to cart</button>
+         <a href="payment.html">
+         <br>   
+         <br> 
+         <br> 
+         <br> 
+         <button  hidden="true" id="order" type="button">Checkout</button></a></div>
+         
+         
+     </form>
+
+
+</article>
+
+
+<footer>
+    Eat healthy live healthy &#8826; P.O BOX-15172 102-52 ozone park, Queens NY &nbsp;11410 
+</footer>
+
+
+
+</body>
+</html>

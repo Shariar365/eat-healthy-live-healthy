@@ -1,0 +1,108 @@
+<html>
+</head>
+<body>
+
+</body>
+</html>
+<head>
+   <!--
+      Assignment : Term project
+      Name: Asm Shariar Chowdhury
+      Date: 7/11/2022
+   -->   
+   <title>Eat healthy live healthy </title>
+   <meta char="utf-8">
+   <meta name="keywords" content="healthy, vegan, salad" >
+   <link rel="stylesheet" type="text/css" href="tp_layout2.css">
+   <script src= "payment.js" ></script>
+</head>
+<body>
+
+<header>
+   <a href="home.html">
+   <img src="poster.jpg" alt="superhero" height="100" />  </a>
+   <nav>
+      <ul>
+      <li> <a href="home.html"> Home</a> </li>
+      <li><a href="recipe.html"> Recipes </a></li>
+      <li id="store"><a href="store.html">Store</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+       </ul>
+   </nav>
+</header>   
+<article class="pay_st">
+      <h1>Payment form</h1>
+      <form id="pay" action="verification.html" method="post">
+       <h2 id="o4">Your order</h2>
+       <div class="paystyle">
+       <p id="date"></p>
+       <br> </div>
+       <hr>
+       <div class="paystyle2">
+       <p id="i1"></p>
+       <p id="i2"></p>
+       <p id="i3"></p>
+       <p id="i4"></p>
+       <br>
+       </div>
+       <hr>
+       <div class="paystyle3">
+       <p id="o1"> </p>
+       <p id="o2"> </p>
+       <br>
+       </div>
+       <hr> 
+       <div class="paystyle4">
+       <p id="o3"> </p>
+       <br>
+       <br>
+       </div>
+    </form>
+    <form id="pay" action="verification.html" method="post">
+       <h2>Credit card information</h2>   
+       <br>
+       <br>   
+       <div>
+       <label for="nameBox">Name*</label>
+       <input type="text" name="custName" id="nameBox" oninvalid="this.setCustomValidity('Please enter Name*')"
+       oninput="this.setCustomValidity('')" required />
+       </div>
+       <br>
+       <br>
+       <div>
+       <label for="credit">Credit card number*</label>
+       <input  name="credit" id="credit" type="text" 
+                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" oninvalid="this.setCustomValidity('Please enter credit card number*')"  oninput="this.setCustomValidity('')" required/>
+       </div>
+       <br>
+       <br>
+       <div><label for="exp">Expiration date*</label>
+            <input type="month" id="start" name="start"
+            min="2022-07" value="2022-10" required>
+       </div>
+       <br>
+       <br>
+            <div><label for="cvc">cvc*</label>
+            <input  id="cvc" name="start" pattern="^\d{3,4}$" type="text" oninvalid="this.setCustomValidity('Please enter cvc*')"
+            oninput="this.setCustomValidity('')"
+            required>
+       </div>
+       <br>
+       <br>
+       <a href="verification.html">
+       <input id="submit" type="submit" value="submit payment" />
+       </a>
+      
+     </form>
+</article>
+
+
+<footer>
+    Eat healthy live healthy &#8826; P.O BOX-15172 102-52 ozone park, Queens NY &nbsp;11410 
+</footer>
+
+
+
+</body>
+</html>

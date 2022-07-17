@@ -1,0 +1,148 @@
+<html>
+<head>
+   <!--
+      Assignment : Term project
+      Name: Asm Shariar Chowdhury
+      Date: 7/11/2022
+   -->   
+   <title>Eat healthy live healthy </title>
+   <meta char="utf-8">
+   <meta name="keywords" content="healthy, vegan, salad" >
+   <link rel="stylesheet" type="text/css" href="tp_layout2.css">
+</head>
+<body >
+
+<header>
+   <a href="home.html">
+   <img src="poster.jpg" alt="superhero" height="100" />  </a>
+   <nav>
+      <ul>
+      <li> <a href="home.html"> Home</a> </li>
+      <li><a href="recipe.html"> Recipes </a></li>
+      <li id="store"><a href="store.html">Store</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+       </ul>
+   </nav>
+</header>   
+<article >
+
+<div class="bigimg">
+
+<div class="Slide">
+  <img src="tuna.jpg" style="width:100%; height:80%">
+  <div class="text">Tuna salad</div>
+</div>
+
+<div class="Slide">
+  <img src="salmon.jpg" style="width:100%; height:80%">
+  <div class="text">Salmon salad</div>
+</div>
+
+<div class="Slide">
+  <img src="tuna2.jpg" style="width:100%; height:80%">
+  <div class="text">Tuna salad 2</div>
+</div>
+
+<div class="Slide">
+  <img src="chickpea3.jpg" style="width:100%; height:80%">
+  <div class="text">Chickpea salad </div>
+</div>
+
+<div class="Slide">
+  <img src="salmon2.jpg" style="width:100%; height:80%">
+  <div class="text">Salmon salad 2</div>
+</div>
+
+<div class="Slide">
+  <img src="chickpea.jpg" style="width:100%; height:80%">
+  <div class="text">Chickpea salad 2</div>
+</div>
+
+<div class="Slide">
+  <img src="tuna3.jpg" style="width:100%; height:80%">
+  <div class="text">Tuna salad 3</div>
+</div>
+
+<div class="Slide">
+  <img src="salmon3.jpg" style="width:100%; height:80%">
+  <div class="text">Salmon salad 3</div>
+</div>
+
+<div class="Slide">
+  <img src="hummus2.jpg" style="width:100%; height:80%">
+  <div class="text">Hummus bowl </div>
+</div>
+
+<div class="Slide">
+  <img src="chickpea2.jpg" style="width:100%; height:80%">
+  <div class="text">Chickpea salad 2</div>
+</div>
+
+
+</div>
+<br>
+
+<div id="under" style="text-align:center">
+  <span  class="small"><img src="tuna.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="salmon.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="tuna2.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="chickpea3.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="salmon2.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="chickpea.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="tuna3.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="salmon3.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="hummus2.jpg" style="width:5.5em; height:5em;"></span> 
+  <span  class="small"><img src="chickpea2.jpg" style="width:5.5em; height:5em;"></span> 
+</div>
+  
+
+
+<script type="text/javascript">
+
+  let slide_num = 0;
+  Slideshow();
+
+function Slideshow() {
+  let i;
+
+  let bigimg = document.getElementsByClassName("Slide");
+  let smallimg = document.getElementsByClassName("small");
+
+  for (i = 0; i < bigimg.length; i++) {
+
+    bigimg[i].style.display = "none";  
+  }
+
+  slide_num++;
+
+  if (slide_num > bigimg.length) {
+
+    slide_num = 1
+  } 
+
+  for (i = 0; i < smallimg.length; i++) {
+    smallimg[i].className = smallimg[i].className.replace(" active", "");
+  }
+
+  bigimg[slide_num-1].style.display = "block";  
+
+  smallimg[slide_num-1].className += " active";
+
+  setTimeout(Slideshow, 500); 
+}
+</script>
+
+  
+</article>
+
+
+
+<footer>
+    Eat healthy live healthy &#8826; P.O BOX-15172 102-52 ozone park, Queens NY &nbsp;11410 
+</footer>
+
+
+
+</body>
+</html>
